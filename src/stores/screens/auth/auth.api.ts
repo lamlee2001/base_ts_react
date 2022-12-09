@@ -15,7 +15,7 @@ const AUTH_API = {
   },
 
   getMeAPI: async () => {
-    const response = await Axios.get('/me');
+    const response = await Axios.get('/auth/me');
     const data = get(response, 'data', null);
     return data;
   },
